@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/images/logo.png" sizes="100x100" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <title>K_SPER</title>
+        <script>
+            function showFiles() {
+                document.getElementsByClassName("files")[0].classList.add("show");
+            }
+
+            function hideFiles() {
+                document.getElementsByClassName("files")[0].classList.remove("show");
+            }
+
+            function changeDirr(dirr) {
+                
+                Array.from(document.getElementsByClassName("current")).forEach(oldCurrent => {
+                    oldCurrent.classList.remove("current");
+                });
+
+
+                Array.from(document.getElementsByClassName(dirr)).forEach(newCurrent => {
+                    newCurrent.classList.add("current");
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Room Name</h1>
+            <p>#roomID</p>
+
+            <a href="/index.html"><img src="/images/logout.png" alt=""></a>
+        </header>
+        <div class="page">
+            <main>
+                <h2>Chat</h2>
+                <button onclick="showFiles()"><img src="/images/files.png" alt="Fichiers"></button>
+                <form action="" method="post" class="send">
+                    <input autofocus type="text" id="message" name="message" required placeholder="Envoyer un message">
+                    <button type="submit"></button>
+                </form>
+                <div class="chat">
+                    <div class="message">
+                        <p class="author">Autheur premier mess</p>
+                        <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione adipisci fuga, dignissimos modi voluptates, commodi, quam nihil corporis error eius suscipit fugit provident aliquid?</p>
+                    </div>
+                    <div class="message">
+                        <p class="author">Autheur deuxièmes mess</p>
+                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione necessitatibus laudantium aspernatur accusamus eum blanditiis illum unde sint itaque veniam, nemo in et praesentium voluptatum quos odit dignissimos libero, molestiae provident minus ullam, iure neque dolor. Tempore dignissimos illo accusamus repellendus velit ab perspiciatis quas voluptatem facere similique! Asperiores.</p>
+                    </div>
+                    <div class="alert">
+                        <p>user1 à quitté la Room</p>
+                    </div>
+                    <div class="alert">
+                        <p>Vous avez rejoint la Room</p>
+                    </div>
+                </div>
+            </main>
+            <aside>
+                <div>
+                    <h2>Participants</h2>
+                    <ul>
+                        <li>user2</li>
+                        <li>user3</li>
+                        <li>user4</li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="files">
+                <h2>Files</h2>
+                <div class="explorateur">
+                    <div>
+                        <button class="Accueil current" onclick="changeDirr('Accueil')">Accueil</button>
+                        <button class="Dirr1" onclick="changeDirr('Dirr1')">Dirr1</button>
+                        <button class="Dirr2" onclick="changeDirr('Dirr2')">Dirr2</button>
+                        <div>
+                            <button>Ajouter un répertoire</button>
+                            <button>Ajouter un fichier</button>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="Accueil current">
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                            <a href="/testFiles/chatPageNoCss.pdf" download><li>Chat Pages No css</li></a>
+                        </ul>
+                        <ul class="Dirr1">
+                            <a href="/testFiles/ptdrrCQuoiCetteMerde.pdf" download><li>PTDRRR C'est Quoi Cette Merde ??</li></a>
+                            <a href="/testFiles/ptdrrCQuoiCetteMerde.pdf" download><li>PTDRRR C'est Quoi Cette Merde ??</li></a>
+                            <a href="/testFiles/ptdrrCQuoiCetteMerde.pdf" download><li>PTDRRR C'est Quoi Cette Merde ??</li></a>
+                            <a href="/testFiles/ptdrrCQuoiCetteMerde.pdf" download><li>PTDRRR C'est Quoi Cette Merde ??</li></a>
+                            <a href="/testFiles/ptdrrCQuoiCetteMerde.pdf" download><li>PTDRRR C'est Quoi Cette Merde ??</li></a>
+                            <a href="/testFiles/ptdrrCQuoiCetteMerde.pdf" download><li>PTDRRR C'est Quoi Cette Merde ??</li></a>
+                            <a href="/testFiles/ptdrrCQuoiCetteMerde.pdf" download><li>PTDRRR C'est Quoi Cette Merde ??</li></a>
+                            <a href="/testFiles/ptdrrCQuoiCetteMerde.pdf" download><li>PTDRRR C'est Quoi Cette Merde ??</li></a>
+                            <a href="/testFiles/ptdrrCQuoiCetteMerde.pdf" download><li>PTDRRR C'est Quoi Cette Merde ??</li></a>
+                            <a href="/testFiles/ptdrrCQuoiCetteMerde.pdf" download><li>PTDRRR C'est Quoi Cette Merde ??</li></a>
+                            <a href="/testFiles/ptdrrCQuoiCetteMerde.pdf" download><li>PTDRRR C'est Quoi Cette Merde ??</li></a>
+                            <a href="/testFiles/ptdrrCQuoiCetteMerde.pdf" download><li>PTDRRR C'est Quoi Cette Merde ??</li></a>
+                            <a href="/testFiles/ptdrrCQuoiCetteMerde.pdf" download><li>PTDRRR C'est Quoi Cette Merde ??</li></a>
+                        </ul>
+                        <ul class="Dirr2">
+                            <a href="/testFiles/cPlusBoSurLeWeb.pdf" download><li>C'est Plus Beau Sur Le Web</li></a>
+                            <a href="/testFiles/cPlusBoSurLeWeb.pdf" download><li>C'est Plus Beau Sur Le Web</li></a>
+                            <a href="/testFiles/cPlusBoSurLeWeb.pdf" download><li>C'est Plus Beau Sur Le Web</li></a>
+                            <a href="/testFiles/cPlusBoSurLeWeb.pdf" download><li>C'est Plus Beau Sur Le Web</li></a>
+                            <a href="/testFiles/cPlusBoSurLeWeb.pdf" download><li>C'est Plus Beau Sur Le Web</li></a>
+                            <a href="/testFiles/cPlusBoSurLeWeb.pdf" download><li>C'est Plus Beau Sur Le Web</li></a>
+                            <a href="/testFiles/cPlusBoSurLeWeb.pdf" download><li>C'est Plus Beau Sur Le Web</li></a>
+                            <a href="/testFiles/cPlusBoSurLeWeb.pdf" download><li>C'est Plus Beau Sur Le Web</li></a>
+                            <a href="/testFiles/cPlusBoSurLeWeb.pdf" download><li>C'est Plus Beau Sur Le Web</li></a>
+                            <a href="/testFiles/cPlusBoSurLeWeb.pdf" download><li>C'est Plus Beau Sur Le Web</li></a>
+                            <a href="/testFiles/cPlusBoSurLeWeb.pdf" download><li>C'est Plus Beau Sur Le Web</li></a>
+                            <a href="/testFiles/cPlusBoSurLeWeb.pdf" download><li>C'est Plus Beau Sur Le Web</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <button class="close" onclick="hideFiles()"><img src="/images/close.png" alt="Fermer"></button>
+            </div>
+        </div>
+    </body>
+</html>
