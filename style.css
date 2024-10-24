@@ -224,9 +224,21 @@ main h2 {
     padding: 15px;
 }
 
+.chat .message {
+    position: relative;
+}
+
 .chat .author {
     color: #ad8cfb;
     margin-bottom: 10px;
+}
+
+.message .date {
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    font-size: 12px;
+    color: #888;
 }
 
 .chat .alert {
@@ -240,6 +252,12 @@ main h2 {
 
 .alert p {
     background-color: #adadad38;
+    padding: 2px;
+}
+
+.alert .date {
+    color: #fff;
+    font-size: 10px;
 }
 
 aside {
@@ -390,4 +408,78 @@ main button {
 main button img {
     width: 100%;
     height: 100%;
+}
+
+
+.adminPannel {
+    display: flex;
+    height: 100%;
+    max-height: 85%;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.adminPannel > div {
+    width: 32%;
+    background-color: #444;
+}
+
+.adminPannel h1 {
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 5%;
+    margin-bottom: 7px;
+}
+
+.adminPannel ul {
+    height: 90%;
+    overflow-y: auto;
+}
+
+.adminPannel li {
+    background-color: #555;
+    padding : 10px;
+    margin: 5px;
+    position: relative;
+}
+
+.adminPannel button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 4px;
+    background-color: transparent;
+    background-attachment: center;
+    background-size: cover;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.adminPannel .delete {
+    right: 4px;
+    background-image: url("/images/delete.png");
+}
+
+.adminPannel .edit {
+    right: 40px;
+    background-image: url("/images/edit.png");
+}
+
+.adminPannel .add {
+    right: 76px;
+    background-image: url("/images/add.png");
+}
+
+.adminPannel .delete:hover {
+    background-image: url("/images/deleteSelected.png");
+}
+
+.adminPannel .edit:hover {
+    background-image: url("/images/editSelected.png");
+}
+
+.adminPannel .add:hover {
+    background-image: url("/images/addSelected.png");
 }

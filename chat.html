@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="/images/logo.png" sizes="100x100" type="image/png">
         <link rel="stylesheet" href="style.css">
-        <title>K_SPER - #roomID</title>
+        <title>K_SPER - Room Name</title>
         <script>
             function showFiles() {
                 document.getElementsByClassName("files")[0].classList.add("show");
@@ -35,29 +35,33 @@
             <h1>Room Name</h1>
             <p>#roomID</p>
 
-            <a href="/index.html"><img src="/images/logout.png" alt=""></a>
+            <a href="/index.html" title="Se Déconnecter"><img src="/images/logout.png" alt=""></a>
         </header>
         <div class="page">
             <main>
                 <h2>Chat</h2>
-                <button onclick="showFiles()"><img src="/images/files.png" alt="Fichiers"></button>
+                <button onclick="showFiles()" title="Fichiers"><img src="/images/files.png" alt="Fichiers"></button>
                 <form action="" method="post" class="send">
                     <input autofocus type="text" id="message" name="message" required placeholder="Envoyer un message">
-                    <button type="submit"></button>
+                    <button type="submit" title="Envoyer"></button>
                 </form>
                 <div class="chat">
                     <div class="message">
                         <p class="author">Autheur premier mess</p>
+                        <p class="date">24/10/2024, 13h54</p>
                         <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione adipisci fuga, dignissimos modi voluptates, commodi, quam nihil corporis error eius suscipit fugit provident aliquid?</p>
                     </div>
                     <div class="message">
                         <p class="author">Autheur deuxièmes mess</p>
+                        <p class="date">24/10/2024, 15h54</p>
                         <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione necessitatibus laudantium aspernatur accusamus eum blanditiis illum unde sint itaque veniam, nemo in et praesentium voluptatum quos odit dignissimos libero, molestiae provident minus ullam, iure neque dolor. Tempore dignissimos illo accusamus repellendus velit ab perspiciatis quas voluptatem facere similique! Asperiores.</p>
                     </div>
                     <div class="alert">
+                        <p class="date">24/10/2024, 16h02</p>
                         <p>user1 à quitté la Room</p>
                     </div>
                     <div class="alert">
+                        <p class="date">27/10/2024, 10h00</p>
                         <p>Vous avez rejoint la Room</p>
                     </div>
                 </div>
@@ -136,7 +140,7 @@
                         </ul>
                     </div>
                 </div>
-                <button class="close" onclick="hideFiles()"><img src="/images/close.png" alt="Fermer"></button>
+                <button class="close" onclick="hideFiles()" title="Fermer"><img src="/images/close.png" alt="Fermer"></button>
             </div>
         </div>
     </body>
