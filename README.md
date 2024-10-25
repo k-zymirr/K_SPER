@@ -2,4 +2,4 @@
 
 A web application to use and administrate chat rooms on a server
 
-(projecg on progress)
+(project in progress)
